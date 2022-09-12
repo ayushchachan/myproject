@@ -6,18 +6,17 @@
 package myproject;
 
 /**
- *
  * @author Ayush Chachan
  */
-public interface PositionalList<E> extends Iterable<E>{
+public interface PositionalList<E> extends Iterable<E> {
 
-    int size( );
+    int size();
 
-    boolean isEmpty( );
- 
-    Position<E> first( );
+    boolean isEmpty();
 
-    Position<E> last( );
+    Position<E> first();
+
+    Position<E> last();
 
     Position<E> before(Position<E> p) throws IllegalArgumentException;
 
@@ -34,5 +33,5 @@ public interface PositionalList<E> extends Iterable<E>{
     E set(Position<E> p, E e) throws IllegalArgumentException;
 
     E remove(Position<E> p) throws IllegalArgumentException;
-    
+
 }

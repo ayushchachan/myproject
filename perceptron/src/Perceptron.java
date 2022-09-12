@@ -5,7 +5,6 @@
 package perceptron;
 
 /**
- *
  * @author Ayush Chachan
  */
 public class Perceptron {
@@ -20,13 +19,18 @@ public class Perceptron {
         this.n = n;                 // length of feature vector
     }
 
+    // Tests this class by directly calling all instance methods.
+    public static void main(String[] args) {
+
+    }
+
     // Returns the number of inputs n.
     public int numberOfInputs() {
         return n;
 
     }
 
-    // Returns the weighted sum of the weight vector and x. 
+    // Returns the weighted sum of the weight vector and x.
     public double weightedSum(double[] x) {
         if (x.length != n) {
             throw new IllegalArgumentException("Invalid feature argument! Invalid length");
@@ -83,11 +87,6 @@ public class Perceptron {
         s.deleteCharAt(s.length() - 1);
         s.append(")");
         return s.toString();
-
-    }
-
-    // Tests this class by directly calling all instance methods.   
-    public static void main(String[] args) {
 
     }
 }

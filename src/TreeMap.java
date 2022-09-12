@@ -8,7 +8,6 @@ package myproject;
 import java.util.Map.Entry;
 
 /**
- *
  * @author Ayush
  */
 public class TreeMap<K, V> extends AbstractSortedMap<K, V> {
@@ -72,5 +71,5 @@ public class TreeMap<K, V> extends AbstractSortedMap<K, V> {
     public Iterable<Entry<K, V>> subMap(K fromKey, K toKey) throws IllegalArgumentException {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+
 }

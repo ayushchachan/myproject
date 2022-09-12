@@ -39,11 +39,9 @@ public class PercolationVisualizer {
             for (int col = 0; col < n; col++) {
                 if (percolation.isFull(row, col)) {
                     StdDraw.setPenColor(StdDraw.BOOK_LIGHT_BLUE);
-                }
-                else if (percolation.isOpen(row, col)) {
+                } else if (percolation.isOpen(row, col)) {
                     StdDraw.setPenColor(StdDraw.WHITE);
-                }
-                else {
+                } else {
                     StdDraw.setPenColor(StdDraw.BLACK);
                 }
                 StdDraw.filledSquare(col + 0.5, n - row - 0.5, 0.45);

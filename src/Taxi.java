@@ -5,7 +5,6 @@
 package myproject;
 
 /**
- *
  * @author Ayush Chachan
  */
 public class Taxi {
@@ -13,14 +12,14 @@ public class Taxi {
     private String name;
     private String location;
     private boolean availability;
-    
-    
+
+
     public Taxi(String taxiName, String currentLocation) {
         location = currentLocation;
         name = taxiName;
         availability = true;
     }
-    
+
     public Taxi(String taxiName) {
         name = taxiName;
     }
@@ -36,13 +35,13 @@ public class Taxi {
     public void setLocation(String newLocation) {
         location = newLocation;
     }
-    
+
     public boolean isAvailable() {
         return availability;
     }
-    
+
     public String toString() {
         return this.name;
     }
-    
+
 }

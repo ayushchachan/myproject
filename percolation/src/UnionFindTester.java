@@ -23,11 +23,9 @@ public class UnionFindTester {
             }
             System.out.println("number of connected components = " + uf.count());
 
-        }
-        catch (FileNotFoundException ex) {
+        } catch (FileNotFoundException ex) {
             ex.printStackTrace();
-        }
-        finally {
+        } finally {
             if (sc != null) sc.close();
         }
 

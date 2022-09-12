@@ -8,82 +8,44 @@ package myproject;
 import java.util.Iterator;
 
 /**
- *
  * @author Ayush Chachan
  */
 public class LinkedPositionalList<E> implements PositionalList<E> {
-    
-    //-----------nested Node class
-    private static class Node<E> implements Position<E> {
-        private E element;
-        private Node<E> prev;
-        private Node<E> next;
-        
-        public Node(E e, Node<E> p, Node<E> n) {
-            this.element = e;
-            this.next = n;
-            this.prev = p;
-        }
-        
-        public E getElement() throws IllegalStateException {
-            if (next == null)                               //convention of defunct node
-                throw new IllegalStateException("Position is invalid");
-            return this.element;
-        }
-        
-        public Node<E> getPrev() {
-            return prev;
-        }
-        
-        public Node<E> getNext() {
-            return next;
-        }
-        
-        public void setElement(E newE) {
-            this.element = newE;
-        }
-        
-        public void setPrev(Node<E> p) {
-            this.prev = p;
-        }
-        
-        public void setNext(Node<E> n) {
-            this.next = n;
-        }
-        
-    }
-    //----end of nested node class
-    
+
     private Node<E> header;
+    //----end of nested node class
     private Node<E> trailer;
     private int size;
-    
     public LinkedPositionalList() {
         header = new Node<>(null, null, null);
         trailer = new Node<>(null, header, null);
         header.setNext(trailer);
         size = 0;
     }
-    
-    //private utilities
-    /**Validate the Position and return it as a node*/
+
+    /**
+     * Validate the Position and return it as a node
+     */
     private Node<E> validate(Position<E> p) throws IllegalArgumentException {
         if (!(p instanceof Node)) throw new IllegalArgumentException("Invalid position: not an instance of Node");
-        Node<E> n = (Node<E>)p;
-        
+        Node<E> n = (Node<E>) p;
+
         if (n.getNext() == null)
             throw new IllegalArgumentException("Invalid position: p is no longer in the list");
         return n;
     }
 
-    /**Return the given node as a Position, or null if it is a sentinel*/
+    //private utilities
+
+    /**
+     * Return the given node as a Position, or null if it is a sentinel
+     */
     public Position<E> position(Node<E> node) {
         if (node == header || node == trailer) return null;
-        
+
         return node;
     }
-    
-    
+
     @Override
     public int size() {
         return size;
@@ -115,9 +77,10 @@ public class LinkedPositionalList<E> implements PositionalList<E> {
         Node<E> n = validate(p);
         return position(n.getNext());
     }
-    
-    //private utilities
-    /**Adds an element e between given nodes*/
+
+    /**
+     * Adds an element e between given nodes
+     */
     private Position<E> addBetween(E elem, Node<E> pred, Node<E> succ) {
         Node<E> newest = new Node<>(elem, pred, succ);
         pred.setNext(newest);
@@ -125,7 +88,9 @@ public class LinkedPositionalList<E> implements PositionalList<E> {
         size++;
         return newest;
     }
-    
+
+    //private utilities
+
     @Override
     public Position<E> addFirst(E e) {
         return addBetween(e, header, header.getNext());
@@ -161,12 +126,12 @@ public class LinkedPositionalList<E> implements PositionalList<E> {
         Node<E> n = validate(p);
         n.getPrev().setNext(n.getNext());
         n.getNext().setPrev(n.getPrev());
-        
+
         n.setNext(null);
         n.setPrev(null);
-        
+
         size--;
-        E elem =  n.getElement();
+        E elem = n.getElement();
         n.setElement(null);
         return elem;
     }
@@ -175,19 +140,59 @@ public class LinkedPositionalList<E> implements PositionalList<E> {
     public Iterator<E> iterator() {
         return new ElementIterator();
     }
-    
+
     public Iterator<Position<E>> positionIterator() {
         return new PositionIterator();
     }
-    
+
+    //-----------nested Node class
+    private static class Node<E> implements Position<E> {
+        private E element;
+        private Node<E> prev;
+        private Node<E> next;
+
+        public Node(E e, Node<E> p, Node<E> n) {
+            this.element = e;
+            this.next = n;
+            this.prev = p;
+        }
+
+        public E getElement() throws IllegalStateException {
+            if (next == null)                               //convention of defunct node
+                throw new IllegalStateException("Position is invalid");
+            return this.element;
+        }
+
+        public void setElement(E newE) {
+            this.element = newE;
+        }
+
+        public Node<E> getPrev() {
+            return prev;
+        }
+
+        public void setPrev(Node<E> p) {
+            this.prev = p;
+        }
+
+        public Node<E> getNext() {
+            return next;
+        }
+
+        public void setNext(Node<E> n) {
+            this.next = n;
+        }
+
+    }
+
     private class ElementIterator implements Iterator<E> {
-        
+
         Node<E> current;
-        
+
         public ElementIterator() {
             current = header.getNext();
         }
-        
+
         @Override
         public boolean hasNext() {
             return current != trailer;
@@ -196,20 +201,20 @@ public class LinkedPositionalList<E> implements PositionalList<E> {
         @Override
         public E next() {
             E answer = current.getElement();
-            current =  current.getNext();
+            current = current.getNext();
             return answer;
         }
-        
+
     }
-    
+
     private class PositionIterator implements Iterator<Position<E>> {
-        
+
         Node<E> current;
-        
+
         public PositionIterator() {
             current = header.getNext();
         }
-        
+
         @Override
         public boolean hasNext() {
             return current != trailer;
@@ -218,10 +223,10 @@ public class LinkedPositionalList<E> implements PositionalList<E> {
         @Override
         public Position<E> next() {
             Position<E> answer = current;
-            current =  current.getNext();
+            current = current.getNext();
             return answer;
         }
-        
+
     }
-    
+
 }

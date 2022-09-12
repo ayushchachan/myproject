@@ -5,10 +5,10 @@
 package perceptron;
 
 import edu.princeton.cs.algs4.Picture;
-import java.awt.Color;
+
+import java.awt.*;
 
 /**
- *
  * @author Ayush Chachan
  */
 public class Grayscale {

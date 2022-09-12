@@ -1,7 +1,8 @@
 package myproject;
 
-import java.util.*;
-import java.io.*;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Scanner;
 
 public class TestMyGraph {
 

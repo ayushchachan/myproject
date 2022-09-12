@@ -13,14 +13,14 @@ class FinancialCalc {
                 + " for " + numOfYears + " years"
                 + " will have a final worth of $" + finalValue);
     }
-    
+
     static double computeFinalValue(double principal,
                                     double interestRate,
                                     int numOfYears) {
-      double finalValue = principal * Math.pow(1 + interestRate, numOfYears);
-      return finalValue;
+        double finalValue = principal * Math.pow(1 + interestRate, numOfYears);
+        return finalValue;
     }
-    
+
     static double computePrincipal(double finalValue,
                                    double interestRate,
                                    int numOfYears) {

@@ -1,11 +1,18 @@
-
 import java.util.Arrays;
 
 /**
- *
  * @author Ayush Chachan
  */
 public class MyBigInteger {
+
+    public static void main(String[] args) {
+        String a = "2466666653656";
+        String b = "5387682446367";
+
+        MyBigInteger T = new MyBigInteger();
+        String a_minus_b = T.subtract(a, b);
+        System.out.println("a - b = " + a_minus_b);
+    }
 
     public String karatsubaMultiply(String x, String y) {
 
@@ -17,11 +24,11 @@ public class MyBigInteger {
 
         // now we have x, y < 10^n
 
-        String x1 = x.substring(0, n/2);
-        String x0 = x.substring(n/2 , n);
+        String x1 = x.substring(0, n / 2);
+        String x0 = x.substring(n / 2, n);
 
-        String y1 = y.substring(0, n/2);
-        String y0 = y.substring(n/2 , n);
+        String y1 = y.substring(0, n / 2);
+        String y0 = y.substring(n / 2, n);
 
         String z0 = karatsubaMultiply(x0, y0);
         String z2 = karatsubaMultiply(x1, y1);
@@ -37,7 +44,6 @@ public class MyBigInteger {
             char c = x.charAt(x.length() - i - 1);
             x_plus_y[n - i - 1] = Character.getNumericValue(c);
         }
-
 
 
         for (int i = 0; i < y.length(); i++) {
@@ -61,7 +67,9 @@ public class MyBigInteger {
         return sb.toString();
     }
 
-    /** Returns x- y; assumes x > y*/
+    /**
+     * Returns x- y; assumes x > y
+     */
     public String IntegerSubtraction(String x, String y) {
         int n = Math.max(x.length(), y.length());
 
@@ -96,14 +104,5 @@ public class MyBigInteger {
 
     public String subtract(String x, String y) {
         return null;
-    }
-
-    public static void main(String[] args) {
-        String a = "2466666653656";
-        String b = "5387682446367";
-
-        MyBigInteger T = new MyBigInteger();
-        String a_minus_b = T.subtract(a, b);
-        System.out.println("a - b = " + a_minus_b);
     }
 }

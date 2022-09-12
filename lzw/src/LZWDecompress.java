@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 /**
- *
  * @author Ayush Chachan
  */
 public class LZWDecompress {
@@ -70,12 +69,14 @@ public class LZWDecompress {
         }
     }
 
-    /**initialize the dictionary*/
+    /**
+     * initialize the dictionary
+     */
     public static void init() {
         dict = new HashMap<>();
 
-        for (int c = 1; c < 127; c++ ) {
-            dict.put(i++, Character.toString((char)c));
+        for (int c = 1; c < 127; c++) {
+            dict.put(i++, Character.toString((char) c));
             //System.out.println(i + ": " + c);
         }
         dict.put(i++, "\n");

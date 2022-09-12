@@ -6,10 +6,11 @@
 package myproject;
 
 /**
- *
  * @author Ayush Chachan
  */
 public interface Vertex<V> {
-  /** Returns the element associated with the vertex. */
-  V getElement();
+    /**
+     * Returns the element associated with the vertex.
+     */
+    V getElement();
 }

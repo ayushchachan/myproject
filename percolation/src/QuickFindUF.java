@@ -6,7 +6,9 @@ public class QuickFindUF {
     private int[] id;           // id[i] = component identifier of i
 
 
-    /** Initialize N empty sets */
+    /**
+     * Initialize N empty sets
+     */
     public QuickFindUF(int N) {
         id = new int[N];
         for (int i = 0; i < N; i++) {
@@ -15,7 +17,9 @@ public class QuickFindUF {
         count = N;
     }
 
-    /** Returns the number of sets. */
+    /**
+     * Returns the number of sets.
+     */
     public int count() {
         return this.count;
     }
@@ -33,14 +37,18 @@ public class QuickFindUF {
         }
     }
 
-    /** Returns true if p and q are in the same component */
+    /**
+     * Returns true if p and q are in the same component
+     */
     public boolean connected(int p, int q) {
         validate(p);
         validate(q);
         return find(p) == find(q);
     }
 
-    /** Adds a connection between p and q */
+    /**
+     * Adds a connection between p and q
+     */
     public void union(int p, int q) {
         //        System.out.println("union is called with p = " + p + ", q = " + q);
         //        System.out.println("id = " + java.util.Arrays.toString(id));

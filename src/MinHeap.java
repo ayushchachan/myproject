@@ -6,70 +6,19 @@ package myproject;
  * and open the template in the editor.
  */
 
-import java.util.Comparator;
-import java.util.Map;
-import java.util.Map.Entry;
 import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.Map.Entry;
 
 /**
- *
  * @author Ayush Chachan An Array based implementation of Min Heap Priority
  * Queue
  */
 public class MinHeap<K, V> {
 
-    //---------nested PQEntry class----------
-    protected static class PQEntry<K, V> implements Entry<K, V> {
-
-        private K key;
-        private V value;
-        private int index;              // index of the array where this entry is stored
-
-        public PQEntry(K key, V val, int j) {
-            this.key = key;
-            this.value = val;
-            this.index = j;
-        }
-
-        public K getKey() {
-            return this.key;
-        }
-
-        public V getValue() {
-            return this.value;
-        }
-
-        public V setValue(V value) {
-            V old = this.value;
-            this.value = value;
-            return old;
-        }
-
-        public K setKey(K newKey) {
-            K old = this.key;
-            this.key = newKey;
-            return old;
-        }
-
-        public int getIndex() {
-            return index;
-        }
-
-        public int setIndex(int j) {
-            int old = index;
-            index = j;
-            return old;
-        }
-
-        public String toString() {
-            return "(" + getKey() + ", " + getValue() + ") --> " + index;
-        }
-    }
-    //-------end of nested PQEntry class--------
-
-    private Comparator<K> comp;                         // comparator object to compare entries in Heap
     protected ArrayList<Entry<K, V>> data;   // stores all the entries in an ArrayList
-
+    //-------end of nested PQEntry class--------
+    private Comparator<K> comp;                         // comparator object to compare entries in Heap
     public MinHeap(Comparator<K> comp) {
         this.comp = comp;
         this.data = new ArrayList<>();
@@ -230,6 +179,54 @@ public class MinHeap<K, V> {
 
     public String toString() {
         return data.toString();
+    }
+
+    //---------nested PQEntry class----------
+    protected static class PQEntry<K, V> implements Entry<K, V> {
+
+        private K key;
+        private V value;
+        private int index;              // index of the array where this entry is stored
+
+        public PQEntry(K key, V val, int j) {
+            this.key = key;
+            this.value = val;
+            this.index = j;
+        }
+
+        public K getKey() {
+            return this.key;
+        }
+
+        public V getValue() {
+            return this.value;
+        }
+
+        public V setValue(V value) {
+            V old = this.value;
+            this.value = value;
+            return old;
+        }
+
+        public K setKey(K newKey) {
+            K old = this.key;
+            this.key = newKey;
+            return old;
+        }
+
+        public int getIndex() {
+            return index;
+        }
+
+        public int setIndex(int j) {
+            int old = index;
+            index = j;
+            return old;
+        }
+
+        public String toString() {
+            return "(" + getKey() + ", " + getValue() + ") --> " + index;
+        }
     }
 
 }

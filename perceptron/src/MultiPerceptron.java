@@ -5,7 +5,6 @@
 package perceptron;
 
 /**
- *
  * @author Ayush Chachan
  */
 public class MultiPerceptron {
@@ -21,6 +20,11 @@ public class MultiPerceptron {
         for (int i = 0; i < m; i++) {
             all_perceptrons[i] = new Perceptron(n);
         }
+    }
+
+    // Tests this class by directly calling all instance methods.
+    public static void main(String[] args) {
+
     }
 
     // Returns the number of classes m.
@@ -73,10 +77,5 @@ public class MultiPerceptron {
         s.deleteCharAt(s.length() - 1);
         s.append(")");
         return s.toString();
-    }
-
-    // Tests this class by directly calling all instance methods.   
-    public static void main(String[] args) {
-
     }
 }

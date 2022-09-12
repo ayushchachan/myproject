@@ -6,7 +6,6 @@
 package myproject;
 
 /**
- *
  * @author Ayush
  */
 public interface Position<E> {

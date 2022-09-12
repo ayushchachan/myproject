@@ -7,7 +7,9 @@ public class WeightedQuickUnionUF {
     private int[] sz;           // size (no. of nodes) of subtree roted at i
 
 
-    /** Initialize N empty sets */
+    /**
+     * Initialize N empty sets
+     */
     public WeightedQuickUnionUF(int N) {
         parent = new int[N];
         sz = new int[N];
@@ -20,7 +22,9 @@ public class WeightedQuickUnionUF {
         count = N;
     }
 
-    /** Returns the number of sets. */
+    /**
+     * Returns the number of sets.
+     */
     public int count() {
         return this.count;
     }
@@ -39,14 +43,18 @@ public class WeightedQuickUnionUF {
         }
     }
 
-    /** Returns true if p and q are in the same component */
+    /**
+     * Returns true if p and q are in the same component
+     */
     public boolean connected(int p, int q) {
         validate(p);
         validate(q);
         return find(p) == find(q);
     }
 
-    /** Adds a connection between p and q */
+    /**
+     * Adds a connection between p and q
+     */
     public void union(int p, int q) {
         //        System.out.println("union is called with p = " + p + ", q = " + q);
         //        System.out.println("id = " + java.util.Arrays.toString(id));
@@ -58,8 +66,7 @@ public class WeightedQuickUnionUF {
         if (sz[qRoot] < sz[pRoot]) {
             parent[qRoot] = pRoot;
             sz[pRoot] += sz[qRoot];
-        }
-        else {
+        } else {
             parent[pRoot] = qRoot;
             sz[qRoot] += sz[pRoot];
         }

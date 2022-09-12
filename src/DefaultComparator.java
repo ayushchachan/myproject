@@ -7,7 +7,6 @@ package myproject;
 import java.util.Comparator;
 
 /**
- *
  * @author Ayush Chachan
  */
 public class DefaultComparator<E> implements Comparator<E> {

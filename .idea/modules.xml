@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MyProject.iml" filepath="$PROJECT_DIR$/MyProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/integerArithmetic/integerArithmetic.iml" filepath="$PROJECT_DIR$/integerArithmetic/integerArithmetic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lzw/lzw.iml" filepath="$PROJECT_DIR$/lzw/lzw.iml" />
+      <module fileurl="file://$PROJECT_DIR$/perceptron/perceptron.iml" filepath="$PROJECT_DIR$/perceptron/perceptron.iml" />
+      <module fileurl="file://$PROJECT_DIR$/percolation/percolation.iml" filepath="$PROJECT_DIR$/percolation/percolation.iml" />
+    </modules>
+  </component>
+</project>

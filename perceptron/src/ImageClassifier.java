@@ -5,18 +5,13 @@
 package perceptron;
 
 import edu.princeton.cs.algs4.Picture;
-import java.awt.Color;
+
+import java.awt.*;
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
- *
  * @author Ayush Chachan
  */
 public class ImageClassifier {

@@ -5,13 +5,14 @@
  */
 package myproject;
 
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.HashMap;
-import java.io.*;
 import java.util.LinkedList;
 import java.util.List;
 
 /**
- *
  * @author Ayush Chachan
  */
 public class Compress {
@@ -28,17 +29,17 @@ public class Compress {
 
             StringBuilder input_file = new StringBuilder();
             int letter;
-            
+
             while ((letter = inputStream.read()) != -1) {       // while P is not 
                 // last character do
                 input_file.append((char) letter);
             }
-            
+
             List<Integer> encrypt = compress(input_file.toString());
             for (int i : encrypt) {
                 System.out.println(i);
             }
-            
+
         } catch (IOException ex) {
             ex.printStackTrace();
         } finally {

@@ -9,20 +9,19 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- *
  * @author Ayush
  */
 public abstract class AbstractBinaryTree<E> extends AbstractTree<E> implements BinaryTree<E> {
-    
+
     public Position<E> sibling(Position<E> p) {
         Position<E> parent = parent(p);
-        
+
         if (parent == null) return null;
         if (p == left(parent)) return right(parent);
         else
             return left(parent);
     }
-    
+
     public int numChildren(Position<E> p) {
         int n = 0;
         if (left(p) != null)
@@ -31,7 +30,7 @@ public abstract class AbstractBinaryTree<E> extends AbstractTree<E> implements B
             n++;
         return n;
     }
-    
+
     public Iterable<Position<E>> children(Position<E> p) {
         List<Position<E>> children = new LinkedList<>();
         if (left(p) != null)

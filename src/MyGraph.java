@@ -11,98 +11,43 @@ import java.util.LinkedList;
 import java.util.Map;
 import java.util.Map.Entry;
 
+interface Edge<E> {
+
+    /**
+     * Returns the element associated with the edge.
+     */
+    E getElement();
+}
+
+interface Vertex<V> {
+
+    /**
+     * Returns the element associated with the vertex.
+     */
+    V getElement();
+}
+
 public class MyGraph<V, E extends Integer> {
 
-    //------Nested Vertex and Edge classes------
-    private class InnerVertex<V> implements Vertex<V> {
-
-        private V element;
-
-        private Map<Vertex<V>, Edge<E>> outgoing, incoming;
-
-        public InnerVertex(V element, boolean isDirected) {
-            this.element = element;
-            outgoing = new HashMap<>();
-
-            if (isDirected) {
-                incoming = new HashMap<>();
-            } else {
-                incoming = outgoing;
-            }
-        }
-
-        public V getElement() {
-            return this.element;
-        }
-
-        public Map<Vertex<V>, Edge<E>> getOutgoing() {
-            return this.outgoing;
-        }
-
-        public Map<Vertex<V>, Edge<E>> getIncoming() {
-            return this.incoming;
-        }
-
-        public int outDegree() {
-            return this.outgoing.size();
-        }
-
-        public int inDegree() {
-            return this.incoming.size();
-        }
-
-        @Override
-        public int hashCode() {
-            return this.element.hashCode();
-        }
-
-        public boolean equals(Object o) {
-            Vertex<V> v = (InnerVertex<V>) o;
-
-            return element.equals(v.getElement());
-        }
-
-        public String toString() {
-            return this.element.toString();
-        }
-    }
-
-    private class InnerEdge<E> implements Edge<E> {
-
-        private E element;
-
-        private Vertex<V>[] endPoints;
-
-        public InnerEdge(Vertex<V> u, Vertex<V> v, E element) {
-            this.element = element;
-            endPoints = (Vertex<V>[]) new Vertex[]{u, v};
-        }
-
-        public E getElement() {
-            return this.element;
-        }
-
-        public Vertex<V>[] getEndPoints() {
-            return this.endPoints;
-        }
-    }
-    //--------end of nested classes-----------
-
     private boolean isDirected;
-
     private Map<V, InnerVertex<V>> vertexMap;
+    //--------end of nested classes-----------
 
     public MyGraph(boolean directed) {
         isDirected = directed;
         vertexMap = new HashMap<>();
     }
-    
-    public MyGraph() {this(false);}
+
+    public MyGraph() {
+        this(false);
+    }
 
     /**
      * Returns the number of vertices in the graph
      */
-    public int numVertices() {return vertexMap.size();}
+    public int numVertices() {
+        return vertexMap.size();
+    }
 
     /**
      * Returns the vertices of the graph as an iterable collection
@@ -225,7 +170,7 @@ public class MyGraph<V, E extends Integer> {
         }
 
     }
-    
+
     public boolean containsVertex(V element) {
         return this.vertexMap.containsKey(element);
     }
@@ -312,7 +257,7 @@ public class MyGraph<V, E extends Integer> {
                 vertex_entry_map.put(u, pq.insert(Integer.MAX_VALUE, u));
             }
         }
-        
+
 
         while (d.size() != this.numVertices()) {
             Entry<Integer, Vertex<V>> shortest = pq.removeMin();
@@ -383,20 +328,78 @@ public class MyGraph<V, E extends Integer> {
         return sb.toString();
     }
 
-}
+    //------Nested Vertex and Edge classes------
+    private class InnerVertex<V> implements Vertex<V> {
 
-interface Edge<E> {
+        private V element;
 
-    /**
-     * Returns the element associated with the edge.
-     */
-    E getElement();
-}
+        private Map<Vertex<V>, Edge<E>> outgoing, incoming;
 
-interface Vertex<V> {
+        public InnerVertex(V element, boolean isDirected) {
+            this.element = element;
+            outgoing = new HashMap<>();
 
-    /**
-     * Returns the element associated with the vertex.
-     */
-    V getElement();
+            if (isDirected) {
+                incoming = new HashMap<>();
+            } else {
+                incoming = outgoing;
+            }
+        }
+
+        public V getElement() {
+            return this.element;
+        }
+
+        public Map<Vertex<V>, Edge<E>> getOutgoing() {
+            return this.outgoing;
+        }
+
+        public Map<Vertex<V>, Edge<E>> getIncoming() {
+            return this.incoming;
+        }
+
+        public int outDegree() {
+            return this.outgoing.size();
+        }
+
+        public int inDegree() {
+            return this.incoming.size();
+        }
+
+        @Override
+        public int hashCode() {
+            return this.element.hashCode();
+        }
+
+        public boolean equals(Object o) {
+            Vertex<V> v = (InnerVertex<V>) o;
+
+            return element.equals(v.getElement());
+        }
+
+        public String toString() {
+            return this.element.toString();
+        }
+    }
+
+    private class InnerEdge<E> implements Edge<E> {
+
+        private E element;
+
+        private Vertex<V>[] endPoints;
+
+        public InnerEdge(Vertex<V> u, Vertex<V> v, E element) {
+            this.element = element;
+            endPoints = (Vertex<V>[]) new Vertex[]{u, v};
+        }
+
+        public E getElement() {
+            return this.element;
+        }
+
+        public Vertex<V>[] getEndPoints() {
+            return this.endPoints;
+        }
+    }
+
 }

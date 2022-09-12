@@ -5,16 +5,13 @@
  */
 package myproject;
 
-import java.util.HashMap;
-import java.util.Scanner;
-import java.io.FileWriter;
+import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.BufferedWriter;
-import java.io.File;
+import java.util.HashMap;
+import java.util.Scanner;
 
 /**
- *
  * @author Ayush Chachan
  */
 public class WordCount {
@@ -23,12 +20,15 @@ public class WordCount {
     private static ChainHashMap<String, Integer> wordFreq1;
     private static ProbeHashMap<String, Integer> wordFreq2;
     private static BufferedWriter bw;
-    /**main method*/
-    public static void main(String[] args){
+
+    /**
+     * main method
+     */
+    public static void main(String[] args) {
         wordFreq0 = new HashMap<>();
         wordFreq1 = new ChainHashMap<>();          //a hash table which maps word to their frequency
         wordFreq2 = new ProbeHashMap<>();
-        
+
         try {
             //a scanner object
             doc = new Scanner(new FileReader("wordCount.txt")).useDelimiter("[^a-zA-Z]+");
@@ -44,16 +44,16 @@ public class WordCount {
                 wordFreq1.put(w, count + 1);
                 wordFreq2.put(w, count + 1);
             }
-            
+
             System.out.println("wordFreq0 = " + wordFreq0);
             System.out.println("wordFreq1 = " + wordFreq1);
             System.out.println("wordFreq2 = " + wordFreq2);
-            
+
             for (String s : wordFreq0.keySet()) {
-            if (wordFreq0.get(s).equals(wordFreq2.get(s))) {
-                System.out.println(wordFreq0.get(s).equals(wordFreq2.get(s)));
+                if (wordFreq0.get(s).equals(wordFreq2.get(s))) {
+                    System.out.println(wordFreq0.get(s).equals(wordFreq2.get(s)));
+                }
             }
-        }
         } catch (IOException ex) {
             ex.printStackTrace();
         } finally {
