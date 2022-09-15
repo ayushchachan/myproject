@@ -1,12 +1,7 @@
 <component name="libraryTable">
   <library name="acm">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/acm.jar!/" />
-      <root url="jar://$PROJECT_DIR$/algs4.jar!/" />
-    </CLASSES>
+    <CLASSES />
     <JAVADOC />
-    <SOURCES>
-      <root url="jar://$PROJECT_DIR$/algs4.jar!/" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>
