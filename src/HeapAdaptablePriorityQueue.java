@@ -1,10 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package myproject;
-
 import java.util.Comparator;
 import java.util.Map.Entry;
 
@@ -29,9 +22,7 @@ public class HeapAdaptablePriorityQueue<K, V> extends HeapPriorityQueue<K, V> im
     }
 
     protected AdaptablePQEntry<K, V> validate(Entry<K, V> e) throws IllegalArgumentException {
-        if (!(e instanceof AdaptablePQEntry)) throw new IllegalArgumentException("Invalid entry paseed");
-
-        AdaptablePQEntry<K, V> pqentry = (AdaptablePQEntry<K, V>) e;
+        if (!(e instanceof AdaptablePQEntry<K, V> pqentry)) throw new IllegalArgumentException("Invalid entry paseed");
 
         int j = pqentry.getIndex();
 

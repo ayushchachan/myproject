@@ -1,46 +1,6 @@
-package myproject;
-/*
- * Copyright 2014, Michael T. Goodrich, Roberto Tamassia, Michael H. Goldwasser
- *
- * Developed for use with the book:
- *
- *    Data Structures and Algorithms in Java, Sixth Edition
- *    Michael T. Goodrich, Roberto Tamassia, and Michael H. Goldwasser
- *    John Wiley & Sons, 2014
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
-
 import java.util.Comparator;
-import java.util.Map.Entry;
 
-/**
- * An abstract base class to ease the implementation of the SortedMap interface.
- * <p>
- * The base class provides four means of support:
- * 1) It defines a PQEntry class as a concrete implementation of the
- * entry interface
- * 2) It provides an instance variable for a general Comparator and
- * protected methods, compare(a, b), that can compare either two
- * entries or two keys using the comparator.
- * 3) It provides a boolean checkKey method that verifies that a given key
- * is appropriate for use with the comparator
- *
- * @author Michael T. Goodrich
- * @author Roberto Tamassia
- * @author Michael H. Goldwasser
- */
+
 public abstract class AbstractSortedMap<K, V>
         extends AbstractMap<K, V> implements SortedMap<K, V> {
 
@@ -48,7 +8,7 @@ public abstract class AbstractSortedMap<K, V>
     /**
      * The comparator defining the ordering of keys in the map.
      */
-    private Comparator<K> comp;
+    private final Comparator<K> comp;
 
     /**
      * Initializes the comparator for the map.

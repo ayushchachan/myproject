@@ -1,10 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package myproject;
-
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
@@ -13,7 +6,7 @@ import java.util.NoSuchElementException;
  * @author Ayush Chachan
  */
 public class UnsortedMap<X, Y> extends AbstractMap<X, Y> {
-    private ArrayList<Entry<X, Y>> data = new ArrayList<>();       //a list object for storing entries
+    private final ArrayList<Entry<X, Y>> data = new ArrayList<>();       //a list object for storing entries
 
     /**
      * Return the size of map

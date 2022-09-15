@@ -1,10 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package myproject;
-
 import java.util.Iterator;
 import java.util.LinkedList;
 
@@ -77,6 +70,11 @@ public class BinaryTree<E> implements Iterable<E> {
     public int height() {
         return this.height(this.root);
     }
+
+    public Node<E> left(Node<E> n) {return n.getLeftChild();}
+
+    public Node<E> right(Node<E> n) {return n.getRightChild();}
+
 
     //extra method for printing binary search tree
     protected void printTree() {
@@ -199,7 +197,7 @@ public class BinaryTree<E> implements Iterable<E> {
          * return the string representation of node
          */
         public String toString() {
-            return ("Node<" + this.key.getClass() + "> : " + this.key.toString());
+            return ("Node<" + this.key.getClass() + "> : " + this.key);
         }
     }
 

@@ -1,5 +1,3 @@
-package myproject;
-
 import java.util.Random;
 
 public class TestMaxHeap {

@@ -1,12 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package myproject;
-
-import acm.graphics.*;
-import acm.program.*;
+import acm.program.GraphicsProgram;
 
 import java.awt.*;
 
@@ -17,10 +9,10 @@ public class Generalised_GraphicalTowerOfHanoi extends GraphicsProgram {
 
 
     //private instance variables
-    private GStack stack1;    //stack of disks on stack1
-    private GStack stack2;    //stack of disks on stack2
-    private GStack stack3;    //stack of disks on stack3
-    private int n;      //number of disks(stored for class)
+    private final GStack stack1;    //stack of disks on stack1
+    private final GStack stack2;    //stack of disks on stack2
+    private final GStack stack3;    //stack of disks on stack3
+    private final int n;      //number of disks(stored for class)
 
     
     /*we will always assume that disks are initially on stack1 and need to be moved to

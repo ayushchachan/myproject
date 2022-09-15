@@ -1,15 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package myproject;
-
 /**
  * @author Ayush Chachan
  */
 public class Taxi {
 
-    private String name;
+    private final String name;
     private String location;
     private boolean availability;
 

@@ -1,10 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package myproject;
-
 import java.util.Comparator;
 import java.util.Map.Entry;
 
@@ -13,7 +6,7 @@ import java.util.Map.Entry;
  */
 public abstract class AbstractPriorityQueue<K, V> implements PriorityQueue<K, V> {
 
-    private Comparator<K> comp;
+    private final Comparator<K> comp;
     //------------end of nested PQEntry class---------------
 
     protected AbstractPriorityQueue(Comparator<K> c) {

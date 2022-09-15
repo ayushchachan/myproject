@@ -1,11 +1,3 @@
-package myproject;
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
@@ -29,8 +21,8 @@ interface Vertex<V> {
 
 public class MyGraph<V, E extends Integer> {
 
-    private boolean isDirected;
-    private Map<V, InnerVertex<V>> vertexMap;
+    private final boolean isDirected;
+    private final Map<V, InnerVertex<V>> vertexMap;
     //--------end of nested classes-----------
 
     public MyGraph(boolean directed) {
@@ -331,9 +323,10 @@ public class MyGraph<V, E extends Integer> {
     //------Nested Vertex and Edge classes------
     private class InnerVertex<V> implements Vertex<V> {
 
-        private V element;
+        private final V element;
 
-        private Map<Vertex<V>, Edge<E>> outgoing, incoming;
+        private final Map<Vertex<V>, Edge<E>> outgoing;
+        private final Map<Vertex<V>, Edge<E>> incoming;
 
         public InnerVertex(V element, boolean isDirected) {
             this.element = element;
@@ -384,9 +377,9 @@ public class MyGraph<V, E extends Integer> {
 
     private class InnerEdge<E> implements Edge<E> {
 
-        private E element;
+        private final E element;
 
-        private Vertex<V>[] endPoints;
+        private final Vertex<V>[] endPoints;
 
         public InnerEdge(Vertex<V> u, Vertex<V> v, E element) {
             this.element = element;

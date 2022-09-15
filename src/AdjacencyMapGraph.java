@@ -1,10 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package myproject;
-
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
@@ -12,8 +5,8 @@ import java.util.Map;
 
 public class AdjacencyMapGraph<V, E> implements Graph<V, E> {
 
-    private boolean isDirected;
-    private Map<V, InnerVertex<V>> vertexMap;
+    private final boolean isDirected;
+    private final Map<V, InnerVertex<V>> vertexMap;
     //--------end of nested classes-----------
 
     public AdjacencyMapGraph(boolean directed) {
@@ -268,9 +261,10 @@ public class AdjacencyMapGraph<V, E> implements Graph<V, E> {
     //------Nested Vertex and Edge classes------
     private class InnerVertex<V> implements Vertex<V> {
 
-        private V element;
+        private final V element;
         //        private Position<Vertex<V>> pos;
-        private Map<Vertex<V>, Edge<E>> outgoing, incoming;
+        private final Map<Vertex<V>, Edge<E>> outgoing;
+        private final Map<Vertex<V>, Edge<E>> incoming;
 
         public InnerVertex(V element, boolean isDirected) {
             this.element = element;
@@ -329,9 +323,9 @@ public class AdjacencyMapGraph<V, E> implements Graph<V, E> {
 
     private class InnerEdge<E> implements Edge<E> {
 
-        private E element;
+        private final E element;
         //        private Position<Edge<E>> pos;
-        private Vertex<V>[] endPoints;
+        private final Vertex<V>[] endPoints;
 
         public InnerEdge(Vertex<V> u, Vertex<V> v, E element) {
             this.element = element;

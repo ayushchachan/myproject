@@ -1,10 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package myproject;
-
 import acm.program.*;
 
 
@@ -13,13 +6,14 @@ import acm.program.*;
  */
 public class GraphicalTowerOfHanoi extends GraphicsProgram {
     //private instance variables
-    private GStack stack1;    //stack of disks on stack1
-    private GStack stack2;    //stack of disks on stack2
-    private GStack stack3;    //stack of disks on stack3
-    
+    private final GStack stack1;    //stack of disks on stack1
+    private final GStack stack2;    //stack of disks on stack2
+    private final GStack stack3;    //stack of disks on stack3
+
     /*we will always assume that disks are initially on stack1 and need to be moved to
     stack3 and we have another empty stack2 which we can use for the process*/
-    private int n;      //number of disks(stored for class)
+    private final int n;      //number of disks(stored for class)
+
     /*Constructor*/
     public GraphicalTowerOfHanoi(int num_disks) {
         n = num_disks;      //storing num_disks in an object

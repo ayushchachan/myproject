@@ -1,10 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package myproject;
-
 import java.util.Iterator;
 
 /**
@@ -61,7 +54,7 @@ public abstract class AbstractMap<X, Y> implements Map<X, Y> {
     }
 
     //a MapEntry class, provides entry objects to store in map
-    protected class MapEntry<X, Y> implements Entry<X, Y> {
+    protected static class MapEntry<X, Y> implements Entry<X, Y> {
         private X key;
         private Y value;
 

@@ -1,11 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package myproject;
-
-import java.util.Random;
+// import java.util.Random;
 
 /**
  * @author Ayush Chachan
@@ -13,8 +6,8 @@ import java.util.Random;
 public abstract class AbstractHashMap<A, B> extends AbstractMap<A, B> {
     protected int CAPACITY;     //capacity i.e. max no of elements that can be stored
     protected int n;            //size of map
-    private int scale, shift;
-    private int prime;
+    // private int scale, shift;
+    // private int prime;
 
     /*constructors*/
 
@@ -24,10 +17,10 @@ public abstract class AbstractHashMap<A, B> extends AbstractMap<A, B> {
      */
     public AbstractHashMap(int p, int cap) {
         CAPACITY = cap;
-        prime = p;
-        Random rgen = new Random();     //a random number generator
-        scale = rgen.nextInt(prime) + 1;
-        shift = rgen.nextInt(prime);
+        // prime = p;
+        // Random rgen = new Random();     //a random number generator
+        // scale = rgen.nextInt(prime) + 1;
+        // shift = rgen.nextInt(prime);
         createTable();
     }
 

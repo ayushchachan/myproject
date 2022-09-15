@@ -1,5 +1,3 @@
-package myproject;
-
 import java.util.Map;
 import java.util.*;
 

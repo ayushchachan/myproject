@@ -1,4 +1,4 @@
-class FinancialCalc {
+class inancialCalc {
 
     public static void main(String[] args) {
         double principal = 1000.00; // $1000 initial investment

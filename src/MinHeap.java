@@ -1,11 +1,3 @@
-package myproject;
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Map.Entry;
@@ -16,9 +8,10 @@ import java.util.Map.Entry;
  */
 public class MinHeap<K, V> {
 
-    protected ArrayList<Entry<K, V>> data;   // stores all the entries in an ArrayList
     //-------end of nested PQEntry class--------
-    private Comparator<K> comp;                         // comparator object to compare entries in Heap
+    private final Comparator<K> comp;                         // comparator object to compare entries in Heap
+    protected ArrayList<Entry<K, V>> data;   // stores all the entries in an ArrayList
+
     public MinHeap(Comparator<K> comp) {
         this.comp = comp;
         this.data = new ArrayList<>();
@@ -125,10 +118,9 @@ public class MinHeap<K, V> {
     }
 
     protected PQEntry<K, V> validate(Entry<K, V> e) throws IllegalArgumentException {
-        if (!(e instanceof PQEntry)) {
+        if (!(e instanceof PQEntry<K, V> pqentry)) {
             throw new IllegalArgumentException("Invalid entry object");
         }
-        PQEntry<K, V> pqentry = (PQEntry<K, V>) e;
 
         int j = pqentry.getIndex();
 

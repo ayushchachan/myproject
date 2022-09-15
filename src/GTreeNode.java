@@ -1,10 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package myproject;
-
 import acm.graphics.*;
 import acm.program.*;
 
@@ -13,8 +6,8 @@ import acm.program.*;
  */
 public class GTreeNode extends GCompound {
     /*constants*/
-    private static double DEFAULT_WIDTH = 40;
-    private static double DEFAULT_HEIGHT = 40;
+    private static final double DEFAULT_WIDTH = 40;
+    private static final double DEFAULT_HEIGHT = 40;
     GRect parentBox, leftBox, rightBox;
     String key;
     GTreeNode parentNode, leftChildNode, rightChildNode;
@@ -111,6 +104,6 @@ public class GTreeNode extends GCompound {
      * return the string representation of node
      */
     public String toString() {
-        return ("<GTreeNode> : " + this.key.toString());
+        return ("<GTreeNode> : " + this.key);
     }
 }

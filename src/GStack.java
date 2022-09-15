@@ -1,12 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package myproject;
-
-import acm.graphics.*;
-import acm.program.*;
+import acm.graphics.GCompound;
+import acm.graphics.GRect;
 
 import java.awt.*;
 import java.util.Stack;
@@ -19,15 +12,15 @@ public class GStack extends GCompound {
     private static final int BASE_HEIGHT = 6;
     //variables associated with rod
     private static final int ROD_WIDTH = 3;
-    Stack<GElement> elements;
     /*private instance variables*/
-    private GRect base;
-    private GRect rod;
-    private int BASE_WIDTH;
-    private int ROD_HEIGHT;
+    private final GRect base;
+    private final GRect rod;
+    private final int BASE_WIDTH;
+    private final int ROD_HEIGHT;
     //x and y location(to keep track for where the next element will be added
     //to stack
-    private double elementX;
+    private final double elementX;
+    Stack<GElement> elements;
     private double elementY;
 
     /**
@@ -72,7 +65,7 @@ public class GStack extends GCompound {
         add(e, x, y);
         elementY -= e.getHeight();
 
-        pause(500);     //pause for 0.5 seconds after every push
+        pause(100);     //pause for 0.5 seconds after every push
 
     }
 

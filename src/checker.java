@@ -1,12 +1,10 @@
-package myproject;
-
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
 public class checker {
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         BufferedReader br = null;
         TaxiService r = new TaxiService();
 

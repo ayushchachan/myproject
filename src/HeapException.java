@@ -1,6 +1,3 @@
-package myproject;
-
-
 public class HeapException extends RuntimeException {
 
     /**

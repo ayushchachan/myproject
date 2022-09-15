@@ -1,10 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package myproject;
-
 import java.util.Iterator;
 
 /**
@@ -12,10 +5,11 @@ import java.util.Iterator;
  */
 public class LinkedPositionalList<E> implements PositionalList<E> {
 
-    private Node<E> header;
+    private final Node<E> header;
     //----end of nested node class
-    private Node<E> trailer;
+    private final Node<E> trailer;
     private int size;
+
     public LinkedPositionalList() {
         header = new Node<>(null, null, null);
         trailer = new Node<>(null, header, null);
@@ -27,8 +21,7 @@ public class LinkedPositionalList<E> implements PositionalList<E> {
      * Validate the Position and return it as a node
      */
     private Node<E> validate(Position<E> p) throws IllegalArgumentException {
-        if (!(p instanceof Node)) throw new IllegalArgumentException("Invalid position: not an instance of Node");
-        Node<E> n = (Node<E>) p;
+        if (!(p instanceof Node<E> n)) throw new IllegalArgumentException("Invalid position: not an instance of Node");
 
         if (n.getNext() == null)
             throw new IllegalArgumentException("Invalid position: p is no longer in the list");

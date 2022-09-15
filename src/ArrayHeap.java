@@ -1,13 +1,8 @@
-package myproject;
-
-
 /**
  * An instance is a priority queue of ints implemented as a min-heap in an
  * array of size 1500. The heap values are themselves the priorities
  */
 public class ArrayHeap {
-
-    private int size; // number of elements in the priority queue (and heap)
 
     /**
      * heap invariant for b[0..size-1]:
@@ -19,7 +14,8 @@ public class ArrayHeap {
      * 5. Priorities for the b[k] used for the comparison in point 4
      * are the elements themselves: the priority of b[k] is b[k].
      */
-    private int[] b = new int[1500];
+    private final int[] b = new int[1500];
+    private int size; // number of elements in the priority queue (and heap)
 
     /**
      * Constructor: an empty heap.
