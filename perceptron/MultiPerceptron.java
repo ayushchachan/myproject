@@ -42,6 +42,21 @@ public class MultiPerceptron {
         }
     }
 
+    // Trains this multi-perceptron on the labeled (between 0 and m-1) input.
+    public void trainMulti(double[] x, int label) {
+        for (int i = 0; i < m; i++) {
+            if (i == label) {
+                // System.out.println("trained perceptron " + i + " with 1");
+                all_perceptrons[i].train(x, 1);
+            }
+            else {
+                // System.out.println("trained perceptron " + i + " with -1");
+                all_perceptrons[i].train(x, -1);
+            }
+        }
+
+    }
+
     // Returns the number of classes m.
     public int numberOfClasses() {
         return m;
@@ -54,30 +69,17 @@ public class MultiPerceptron {
 
     // Returns the predicted label (between 0 and m-1) for the given input.
     public int predictMulti(double[] x) {
-        double max_weighted_sum = 0;
+        double max_weighted_sum = Double.MIN_VALUE;
         int label = 0;
 
         for (int i = 0; i < m; i++) {
             double weighted_sum = all_perceptrons[i].weightedSum(x);
-            if (weighted_sum > max_weighted_sum) {
+            if (weighted_sum >= max_weighted_sum) {
                 label = i;
                 max_weighted_sum = weighted_sum;
             }
         }
         return label;
-    }
-
-    // Trains this multi-perceptron on the labeled (between 0 and m-1) input.
-    public void trainMulti(double[] x, int label) {
-        for (int i = 0; i < m; i++) {
-            if (i == label) {
-                all_perceptrons[i].train(x, 1);
-            }
-            else {
-                all_perceptrons[i].train(x, -1);
-            }
-        }
-
     }
 
     // Returns a String representation of this MultiPerceptron, with

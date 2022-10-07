@@ -8,38 +8,10 @@ import java.io.IOException;
  */
 public class ImageClassifier {
 
-    // Creates a feature vector (1D array) from the given picture.
-    public static double[] extractFeatures(Picture p1) {
-        // System.out.println("-----------------------------     ------------------------");
-        double[] vector = new double[p1.width() * p1.height()];
-        // printPictureAsArray(p1);
-        // System.out.println("-----------------------------     ------------------------");
-        for (int i = 0; i < p1.width(); i++) {
-            for (int j = 0; j < p1.height(); j++) {
-                // System.out.print("{" + p1.get(j, i).getRed());
-                // System.out.print(", " + p1.get(j, i).getGreen());
-                // System.out.println(", " + p1.get(j, i).getBlue() + "}");
-                int pixValue = p1.get(j, i).getRed();          // since image is grayscale
-                vector[i * p1.height() + j] = pixValue;
-            }
-        }
-        return vector;
-    }
-
     // See below.
-    // public static void main(String[] args) {
-    //     String trainingFile = args[0];
-    //     String testFile = args[1];
-    //     MultiPerceptron myPerceptron = readTrainingFile(trainingFile);
-    //
-    //     double errorRate = readTestFile(myPerceptron, testFile);
-    //     System.out.println("error rate = " + errorRate);
-    //     // System.out.println(java.util.Arrays.toString(extractFeatures(pic)));
-    // }
-
     public static void main(String[] args) {
-        String trainingFile = "digits-training10.txt";
-        String testFile = "digits-testing3.txt";
+        String trainingFile = "digits-training60K.txt";
+        String testFile = "digits-testing10K.txt";
         MultiPerceptron myPerceptron = readTrainingFile(trainingFile);
 
         double errorRate = readTestFile(myPerceptron, testFile);
@@ -69,6 +41,7 @@ public class ImageClassifier {
 
                 String[] lineSplitArray = line.split("\\s+");
                 String imgFilename = lineSplitArray[0];
+                // System.out.println("trained with " + imgFilename);
                 int intLabel = Integer.parseInt(lineSplitArray[1]);
 
                 Picture picOrig = new Picture(imgFilename);
@@ -102,6 +75,7 @@ public class ImageClassifier {
         double errorRate = 1;
 
         try {
+
             br = new BufferedReader(new FileReader(filename));
 
             int m = Integer.parseInt(br.readLine());        // no of classes
@@ -154,6 +128,19 @@ public class ImageClassifier {
             }
         }
         return errorRate;
+    }
+
+    // Creates a feature vector (1D array) from the given picture.
+    public static double[] extractFeatures(Picture p1) {
+        double[] vector = new double[p1.height() * p1.width()];
+        for (int i = 0; i < p1.height(); i++) {
+            for (int j = 0; j < p1.width(); j++) {
+
+                int pixValue = p1.get(j, i).getRed();          // since image is grayscale
+                vector[i * p1.width() + j] = pixValue;
+            }
+        }
+        return vector;
     }
 
     private static void printPictureAsArray(Picture p1) {
