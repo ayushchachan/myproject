@@ -37,9 +37,42 @@ public class Perceptron {
         }
     }
 
-    // Returns the number of inputs n.
-    public int numberOfInputs() {
-        return n;
+    // Trains this perceptron on the labeled (+1 or -1) input x.
+    // The weights vector is updated accordingly.
+    public void train(double[] x, int label) {
+        if (label != 1 && label != -1) {
+            throw new IllegalArgumentException("Invalid label argument!");
+        }
+        int estimate = predict(x);
+        if (estimate > label) {
+            // System.out.println("initially weightS = " + Arrays.toString(weights));
+            // System.out.println("estimate = " + estimate + ", label = " + label + "--> decreement");
+            for (int i = 0; i < n; i++) {
+                weights[i] -= x[i];
+            }
+            // System.out.println("finally weights = " + Arrays.toString(weights));
+        }
+        else if (estimate < label) {
+            // System.out.println("initially weightS = " + Arrays.toString(weights));
+            // System.out.print("estimate = " + estimate + ", label = " + label + "--> increment");
+
+            for (int i = 0; i < n; i++) {
+                weights[i] += x[i];
+            }
+            // System.out.println("finally weights = " + Arrays.toString(weights));
+        }
+    }
+
+    // Predicts the label (+1 or -1) of input x. It returns +1
+    // if the weighted sum is positive and -1 if it is negative (or zero).
+    public int predict(double[] x) {
+        double w = weightedSum(x);
+        if (w > 0) {
+            return 1;
+        }
+        else {
+            return -1;
+        }
     }
 
     // Returns the weighted sum of the weight vector and x.
@@ -56,40 +89,9 @@ public class Perceptron {
 
     }
 
-    // Predicts the label (+1 or -1) of input x. It returns +1
-    // if the weighted sum is positive and -1 if it is negative (or zero).
-    public int predict(double[] x) {
-        double w = weightedSum(x);
-        if (w > 0) {
-            return 1;
-        }
-        else {
-            return -1;
-        }
-    }
-
-    // Trains this perceptron on the labeled (+1 or -1) input x.
-    // The weights vector is updated accordingly.
-    public void train(double[] x, int label) {
-        if (label != 1 && label != -1) {
-            throw new IllegalArgumentException("Invalid label argument!");
-        }
-        int estimate = predict(x);
-        if (estimate > label) {
-            // System.out.println("initially weightS = " + Arrays.toString(weights));
-            for (int i = 0; i < n; i++) {
-                weights[i] -= x[i];
-            }
-            // System.out.println("finally weights = " + Arrays.toString(weights));
-        }
-        else if (estimate < label) {
-            // System.out.println("initially weightS = " + Arrays.toString(weights));
-            for (int i = 0; i < n; i++) {
-                weights[i] += x[i];
-            }
-            // System.out.println("finally weights = " + Arrays.toString(weights));
-        }
-
+    // Returns the number of inputs n.
+    public int numberOfInputs() {
+        return n;
     }
 
     // Returns a String representation of the weight vector, with the
