@@ -3,22 +3,6 @@ import java.util.LinkedList;
 import java.util.Map;
 import java.util.Map.Entry;
 
-interface Edge<E> {
-
-    /**
-     * Returns the element associated with the edge.
-     */
-    E getElement();
-}
-
-interface Vertex<V> {
-
-    /**
-     * Returns the element associated with the vertex.
-     */
-    V getElement();
-}
-
 public class MyGraph<V, E extends Integer> {
 
     private final boolean isDirected;
@@ -323,10 +307,10 @@ public class MyGraph<V, E extends Integer> {
     //------Nested Vertex and Edge classes------
     private class InnerVertex<V> implements Vertex<V> {
 
-        private final V element;
+        private V element;
 
-        private final Map<Vertex<V>, Edge<E>> outgoing;
-        private final Map<Vertex<V>, Edge<E>> incoming;
+        private Map<Vertex<V>, Edge<E>> outgoing;
+        private Map<Vertex<V>, Edge<E>> incoming;
 
         public InnerVertex(V element, boolean isDirected) {
             this.element = element;

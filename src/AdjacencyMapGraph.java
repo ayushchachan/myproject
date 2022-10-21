@@ -5,9 +5,142 @@ import java.util.Map;
 
 public class AdjacencyMapGraph<V, E> implements Graph<V, E> {
 
-    private final boolean isDirected;
-    private final Map<V, InnerVertex<V>> vertexMap;
+    //------Nested Vertex and Edge classes------
+    private class InnerVertex<V> implements Vertex<V> {
+
+        private final V element;
+        private Position<Vertex<V>> pos;
+        private final Map<Vertex<V>, Edge<E>> outgoing;
+        private final Map<Vertex<V>, Edge<E>> incoming;
+
+        /**
+         * Constructs a new InnerVertex instance storing the given element.
+         * @param element
+         * @param isDirected
+         */
+        public InnerVertex(V element, boolean isDirected) {
+            this.element = element;
+            outgoing = new HashMap<>();
+
+            if (isDirected) {
+                incoming = new HashMap<>();
+            } else {
+                incoming = outgoing;
+            }
+        }
+
+        /**
+         *
+         * @return the element associated with vertex.
+         */
+        public V getElement() {
+            return this.element;
+        }
+
+        /**
+         * Stores the position of this vertex within the graph's vertex list.
+         * @param position
+         */
+        public void setPositon(Position<Vertex<V>> position) {
+            this.pos = position;
+        }
+
+        /**
+         * Returns the position of this vertex within the graph's vertex list
+         * @return
+         */
+        public Position<Vertex<V>> getPosition() {
+            return this.pos;
+        }
+
+        /**
+         *
+         * @return reference to the underlying map of outgoing edges.
+         */
+        public Map<Vertex<V>, Edge<E>> getOutgoing() {
+            return this.outgoing;
+        }
+        /**
+         *
+         * @return reference to the underlying map of incoming edges.
+         */
+        public Map<Vertex<V>, Edge<E>> getIncoming() {
+            return this.incoming;
+        }
+
+        public int outDegree() {
+            return this.outgoing.size();
+        }
+
+        public int inDegree() {
+            return this.incoming.size();
+        }
+
+        @Override
+        public int hashCode() {
+            return this.element.hashCode();
+        }
+
+        public boolean equals(Object o) {
+            Vertex<V> v = (InnerVertex<V>) o;
+
+            return element.equals(v.getElement());
+        }
+
+        public String toString() {
+            return this.element.toString();
+        }
+    }
+
+    private class InnerEdge<E> implements Edge<E> {
+
+        private final E element;
+        private Position<Edge<E>> pos;
+        private final Vertex<V>[] endPoints;
+
+        /**
+         * Constructs InnerEdge instance from u to v,
+         * storing the given element.
+         */
+        public InnerEdge(Vertex<V> u, Vertex<V> v, E element) {
+            this.element = element;
+            endPoints = (Vertex<V>[]) new Vertex[]{u, v};
+        }
+        /**
+         *
+         * @return the element associated with edge.
+         */
+        public E getElement() {
+            return this.element;
+        }
+
+        /**
+         *
+         * @return reference to the endpoint array
+         */
+        public Vertex<V>[] getEndPoints() {
+            return this.endPoints;
+        }
+
+        /**
+         * Stores the position of this edge within the graph's vertex list.
+         */
+        public void setPosition(Position<Edge<E>> p) {
+            this.pos = p;
+        }
+
+        /**
+         *
+         * @return the position of this edge within the graph's vertex list.
+         */
+        public Position<Edge<E>> getPosition() {
+            return this.pos;
+        }
+    }
     //--------end of nested classes-----------
+
+    private final Map<V, InnerVertex<V>> vertexMap;
+    private final boolean isDirected;
 
     public AdjacencyMapGraph(boolean directed) {
         isDirected = directed;
@@ -258,95 +391,6 @@ public class AdjacencyMapGraph<V, E> implements Graph<V, E> {
         return this.vertexMap.get(x);
     }
 
-    //------Nested Vertex and Edge classes------
-    private class InnerVertex<V> implements Vertex<V> {
 
-        private final V element;
-        //        private Position<Vertex<V>> pos;
-        private final Map<Vertex<V>, Edge<E>> outgoing;
-        private final Map<Vertex<V>, Edge<E>> incoming;
-
-        public InnerVertex(V element, boolean isDirected) {
-            this.element = element;
-            outgoing = new HashMap<>();
-
-            if (isDirected) {
-                incoming = new HashMap<>();
-            } else {
-                incoming = outgoing;
-            }
-        }
-
-        public V getElement() {
-            return this.element;
-        }
-
-//        public void setPositon(Position<Vertex<V>> position) {
-//            this.pos = position;
-//        }
-//
-//        public Position<Vertex<V>> getPosition() {
-//            return this.pos;
-//        }
-
-        public Map<Vertex<V>, Edge<E>> getOutgoing() {
-            return this.outgoing;
-        }
-
-        public Map<Vertex<V>, Edge<E>> getIncoming() {
-            return this.incoming;
-        }
-
-        public int outDegree() {
-            return this.outgoing.size();
-        }
-
-        public int inDegree() {
-            return this.incoming.size();
-        }
-
-        @Override
-        public int hashCode() {
-            return this.element.hashCode();
-        }
-
-        public boolean equals(Object o) {
-            Vertex<V> v = (InnerVertex<V>) o;
-
-            return element.equals(v.getElement());
-        }
-
-        public String toString() {
-            return this.element.toString();
-        }
-    }
-
-    private class InnerEdge<E> implements Edge<E> {
-
-        private final E element;
-        //        private Position<Edge<E>> pos;
-        private final Vertex<V>[] endPoints;
-
-        public InnerEdge(Vertex<V> u, Vertex<V> v, E element) {
-            this.element = element;
-            endPoints = (Vertex<V>[]) new Vertex[]{u, v};
-        }
-
-        public E getElement() {
-            return this.element;
-        }
-
-        public Vertex<V>[] getEndPoints() {
-            return this.endPoints;
-        }
-
-//        public void setPosition(Position<Edge<E>> p) {
-//            this.pos = p;
-//        }
-//
-//        public Position<Edge<E>> getPosition() {
-//            return this.pos;
-//        }
-    }
 
 }

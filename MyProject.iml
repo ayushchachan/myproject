@@ -30,5 +30,16 @@
         </SOURCES>
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Downloads/sourcecode.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/Downloads/sourcecode.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>

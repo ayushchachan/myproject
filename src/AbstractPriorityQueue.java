@@ -7,24 +7,6 @@ import java.util.Map.Entry;
 public abstract class AbstractPriorityQueue<K, V> implements PriorityQueue<K, V> {
 
     private final Comparator<K> comp;
-    //------------end of nested PQEntry class---------------
-
-    protected AbstractPriorityQueue(Comparator<K> c) {
-        this.comp = c;
-    }
-
-    protected AbstractPriorityQueue() {
-        this(new DefaultComparator<K>());
-    }
-
-    protected int compare(Entry<K, V> e1, Entry<K, V> e2) {
-        return comp.compare(e1.getKey(), e2.getKey());
-    }
-
-    public boolean isEmpty() {
-        return size() == 0;
-    }
-
     //---------nested PQEntry class-----------
     protected static class PQEntry<K, V> implements Entry<K, V> {
 
@@ -58,5 +40,23 @@ public abstract class AbstractPriorityQueue<K, V> implements PriorityQueue<K, V>
             this.key = newKey;
             return old;
         }
+    }
+
+    //------------end of nested PQEntry class---------------
+
+    protected AbstractPriorityQueue(Comparator<K> c) {
+        this.comp = c;
+    }
+
+    protected AbstractPriorityQueue() {
+        this(new DefaultComparator<K>());
+    }
+
+    protected int compare(Entry<K, V> e1, Entry<K, V> e2) {
+        return comp.compare(e1.getKey(), e2.getKey());
+    }
+
+    public boolean isEmpty() {
+        return size() == 0;
     }
 }
