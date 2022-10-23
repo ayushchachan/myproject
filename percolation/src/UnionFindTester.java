@@ -1,3 +1,4 @@
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.Scanner;
@@ -8,8 +9,10 @@ import java.util.Scanner;
  */
 public class UnionFindTester {
     public static void main(String[] args) {
-        String filename = "test/largeUF.txt";
         Scanner sc = null;
+        String path = "/home/ayushchachan/Documents/myproject/percolation/src/";
+
+        String filename = path + "largeUF.txt";
         try {
             sc = new Scanner(new FileReader(filename));
             int N = Integer.parseInt(sc.nextLine());
