@@ -82,7 +82,7 @@ public class HeapPriorityQueue<K, V> extends AbstractPriorityQueue<K, V> {
     }
 
     @Override
-    public Map.Entry<K, V> insert(K key, V value) throws IllegalArgumentException {
+    public Entry<K, V> insert(K key, V value) throws IllegalArgumentException {
         Entry<K, V> newest = new PQEntry<>(key, value);
         data.add(newest);
         heapify_up(data.size() - 1);
@@ -90,13 +90,13 @@ public class HeapPriorityQueue<K, V> extends AbstractPriorityQueue<K, V> {
     }
 
     @Override
-    public Map.Entry<K, V> min() {
+    public Entry<K, V> min() {
         if (data.isEmpty()) return null;
         return data.get(0);
     }
 
     @Override
-    public Map.Entry<K, V> removeMin() {
+    public Entry<K, V> removeMin() {
         if (data.isEmpty()) return null;
 
         Entry<K, V> answer = data.get(0);
