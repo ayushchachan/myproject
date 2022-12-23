@@ -1,5 +1,5 @@
 /**
- * @author Chankit Chachan
+ * @author Ayush Chachan
  */
 public class WeightedQuickUnionUF {
     private int count;          // number of connected components
@@ -66,7 +66,8 @@ public class WeightedQuickUnionUF {
         if (sz[qRoot] < sz[pRoot]) {
             parent[qRoot] = pRoot;
             sz[pRoot] += sz[qRoot];
-        } else {
+        }
+        else {
             parent[pRoot] = qRoot;
             sz[qRoot] += sz[pRoot];
         }

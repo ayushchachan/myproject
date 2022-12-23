@@ -1,16 +1,15 @@
-
-/*  
+/*
 By convention, the row and column indices are integers 
 between 1 and n, where (1, 1) is the upper-left site:
 Throw an IllegalArgumentException if any argument 
 to open(), isOpen(), or isFull() is outside its prescribed range. 
 Throw an IllegalArgumentException in the constructor if n ≤ 0.
  */
+
 import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
 /**
- *
- * @author Chankit Chachan
+ * @author Ayush Chachan
  */
 public class Percolation {
 
@@ -61,13 +60,14 @@ public class Percolation {
         sites[i][j] = true;
 
         this.numOpen++;
-//        if (this.percolates()) {
-//            System.out.println("system percolates at " + this.numberOfOpenSites() + " open sites");
-//        }
+        //        if (this.percolates()) {
+        //            System.out.println("system percolates at " + this.numberOfOpenSites() + " open sites");
+        //        }
 
         if (row == 1) {
             uf.union(ufIndex, ufIndex - sites.length);
-        } else if (row == sites.length) {
+        }
+        else if (row == sites.length) {
             uf.union(ufIndex, ufIndex + sites.length);
         }
 

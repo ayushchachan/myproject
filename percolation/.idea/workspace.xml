@@ -1,7 +1,480 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="" />
+    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyProject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../acm.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algs4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/.idea/checkstyle-idea.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/.idea/codeInsightSettings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/.idea/dictionaries/lift.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/.idea/externalDependencies.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/.idea/file.template.settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/.idea/fileTemplates/includes/File Header.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/.idea/fileTemplates/internal/AnnotationType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/.idea/fileTemplates/internal/Class.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/.idea/fileTemplates/internal/Enum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/.idea/fileTemplates/internal/Interface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/.idea/fileTemplates/internal/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/.idea/fileTemplates/internal/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/.idea/findbugs-idea.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/.idea/inspectionProfiles/COS_126.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/.idea/libraries/COS_126.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/.idea/saveactions_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/.lift/checkstyle-cos126.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/.lift/checkstyle-lift.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/.lift/checkstyle-suppressions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/.lift/introcs.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/.lift/spotbugs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/.lift/stdlib.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/49785.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/COS 126.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/Grayscale.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/Grayscale.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/ImageClassifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/ImageClassifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/Kuzushiji-testing10K.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/Kuzushiji-training60K.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/Luminance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/Luminance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/MultiPerceptron.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/MultiPerceptron.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/Perceptron.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/Perceptron.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/animals-testing12K.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/animals-training60K.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits-testing10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits-testing100.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits-testing10K.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits-testing1K.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits-testing20.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits-testing3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits-testing30.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits-testing40.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits-testing50.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits-training10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits-training100.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits-training20.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits-training30.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits-training40.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits-training5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits-training50.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits-training60K.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits-training6K.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/0/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/0/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/0/25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/0/28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/0/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/0/55.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/0/69.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/0/71.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/0/7846.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/1/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/1/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/1/29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/1/31.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/1/37.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/1/39.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/1/40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/1/46.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/1/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/1/57.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/1/74.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/1/89.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/1/94.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/1/96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/2/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/2/35.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/2/38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/2/43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/2/47.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/2/72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/2/77.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/2/82.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/3/18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/3/30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/3/32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/3/44.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/3/51.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/3/63.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/3/68.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/3/7398.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/3/76.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/3/87.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/3/90.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/3/93.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/4/19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/4/24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/4/27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/4/33.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/4/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/4/42.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/4/48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/4/49.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/4/56.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/4/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/4/65.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/4/67.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/4/85.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/4/95.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/5/15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/5/23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/5/45.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/5/52.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/5/53.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/5/5571.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/5/59.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/5/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/6/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/6/21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/6/22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/6/50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/6/54.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/6/66.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/6/81.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/6/88.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/6/91.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/6/98.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/7/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/7/17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/7/26.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/7/34.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/7/36.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/7/41.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/7/60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/7/64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/7/70.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/7/75.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/7/79.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/7/80.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/7/83.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/7/86.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/7/97.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/8/61.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/8/84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/9/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/9/16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/9/20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/9/58.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/9/62.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/9/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/9/73.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/9/78.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/9/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/9/92.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/testing/9/99.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/0/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/0/1926.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/0/21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/0/34.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/0/37.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/0/51.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/0/56.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/0/63.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/0/68.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/0/69.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/0/75.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/0/81.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/0/88.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/0/95.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/1/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/1/23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/1/24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/1/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/1/40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/1/59.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/1/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/1/67.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/1/70.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/1/72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/1/77.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/1/78.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/1/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/1/99.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/2/16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/2/25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/2/28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/2/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/2/76.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/2/82.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/3/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/3/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/3/23412.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/3/27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/3/30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/3/44.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/3/49.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/3/50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/3/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/3/74.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/3/86.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/3/98.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/4/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/4/20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/4/26.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/4/53.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/4/58.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/4/60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/4/61.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/4/64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/4/89.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/4/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/4/92.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/5/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/5/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/5/35.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/5/47.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/5/49785.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/5/65.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/6/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/6/18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/6/32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/6/36.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/6/39.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/6/62.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/6/66.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/6/73.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/6/83.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/6/90.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/6/93.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/7/15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/7/29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/7/38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/7/39605.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/7/42.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/7/4545.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/7/52.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/7/71.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/7/79.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/7/84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/7/91.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/7/96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/8/17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/8/31.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/8/41.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/8/46.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/8/55.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/8/85.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/8/94.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/8/97.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/9/19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/9/22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/9/33.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/9/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/9/43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/9/45.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/9/48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/9/54.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/9/57.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/9/80.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/digits/training/9/87.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/fashion-testing10K.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/fashion-training60K.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/fruit-testing6K.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/fruit-training30K.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/image3-by-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/music-testing10K.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/music-training50K.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classifier/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../integerArithmetic/integerArithmetic.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../integerArithmetic/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../integerArithmetic/src/MyBigInteger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../integerArithmetic/src/MyInteger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leetcode/leetcode.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leetcode/src/LRUCache.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leetcode/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leetcode/src/PathExists.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leetcode/src/PossibleBipartition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lzw/lzw.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lzw/src/LZWCompress.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lzw/src/LZWDecompress.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/AVLTree$AVLNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/AVLTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/AbstractHashMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/AbstractMap$KeyCollection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/AbstractMap$KeyIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/AbstractMap$MapEntry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/AbstractMap$ValueCollection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/AbstractMap$ValueIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/AbstractMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/AbstractPriorityQueue$PQEntry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/AbstractPriorityQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/AbstractSortedMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/AbstractTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/AdaptablePriorityQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/AdjacencyMapGraph$InnerEdge.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/AdjacencyMapGraph$InnerVertex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/AdjacencyMapGraph.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/ArrayHeap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/BinarySearchTree$DefaultComparator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/BinarySearchTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/BinaryTree$ElementIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/BinaryTree$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/BinaryTree$NodeIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/BinaryTree$NodesIterable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/BinaryTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/ChainHashMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/CopyBytes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/DefaultComparator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/Edge.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/Entry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/GBinaryTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/GElement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/GStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/GTreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/Generalised_GraphicalTowerOfHanoi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/Graph.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/GraphicalTowerOfHanoi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/HeapAdaptablePriorityQueue$AdaptablePQEntry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/HeapAdaptablePriorityQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/HeapException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/HeapPriorityQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/Inversion$Entry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/Inversion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/LinkedPositionalList$ElementIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/LinkedPositionalList$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/LinkedPositionalList$PositionIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/LinkedPositionalList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/Map.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/MaxHeap$PQEntry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/MaxHeap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/MinHeap$PQEntry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/MinHeap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/MyGraph$InnerEdge.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/MyGraph$InnerVertex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/MyGraph.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/NewGraphics.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/Position.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/PositionalList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/PriorityQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/ProbeHashMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/ShubhamLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/SortedMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/Taxi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/TaxiService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/TestMaxHeap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/TestMinHeap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/TestMyGraph.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/Tree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/TreeMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/UnionFind.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/UnionFind1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/UnionFind2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/UnsortedMap$EntryCollection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/UnsortedMap$EntryIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/UnsortedMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/Vertex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/checker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/MyProject/inancialCalc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/integerArithmetic/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/integerArithmetic/MyBigInteger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/integerArithmetic/MyInteger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/leetcode/LRUCache.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/leetcode/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/leetcode/PathExists.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/leetcode/PossibleBipartition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/leetcode/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/leetcode/WeightedQuickUnionUF.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/percolation/InteractivePercolationVisualizer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/percolation/Percolation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/percolation/PercolationStats.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/percolation/PercolationVisualizer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/percolation/QuickFindUF.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/percolation/QuickUnionUF.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/percolation/UnionFindTester.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/percolation/WeightedQuickUnionUF.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/percolation/largeUF.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/percolation/mediumUF.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/percolation/tinyUF.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/lift.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/lift.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/fileTemplates/includes/File Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fileTemplates/includes/File Header.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Algorithms__Part_I.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Algorithms__Part_I.xml.old" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/COS_126.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/introcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.lift/checkstyle-coursera.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.lift/introcs.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.lift/stdlib.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithms, Part I.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CREDITS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Computer Science.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PercolationVisualizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/PercolationVisualizer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PercolationVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/PercolationVisualizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/AVLTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/AbstractHashMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/AbstractMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/AbstractPriorityQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/AbstractSortedMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/AbstractTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/AdaptablePriorityQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/AdjacencyMapGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/ArrayHeap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/BinarySearchTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/BinaryTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/ChainHashMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/CopyBytes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/DefaultComparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/Edge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/Entry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/GBinaryTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/GElement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/GStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/GTreeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/Generalised_GraphicalTowerOfHanoi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/Graph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/GraphicalTowerOfHanoi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/HeapAdaptablePriorityQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/HeapException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/HeapPriorityQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/Inversion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/LinkedPositionalList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/Map.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/MaxHeap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/MinHeap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/MyGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/NewGraphics.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/Position.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/PositionalList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/PriorityQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/ProbeHashMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/ShubhamLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/SortedMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/Taxi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/TaxiService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/TestMaxHeap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/TestMinHeap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/TestMyGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/Tree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/TreeMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/UnionFind.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/UnionFind1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/UnionFind2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/UnsortedMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/Vertex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/checker.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,11 +501,17 @@
   <component name="FormatOnSaveOptions">
     <option name="myRunOnSave" value="true" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="OptimizeOnSaveOptions">
     <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="106" />
@@ -41,6 +520,7 @@
     <option name="height" value="765" />
   </component>
   <component name="ProjectId" id="2BZwWqOJeDbrQGpNxQL7XU2irA8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <showLibraryContents PackagesPane="false" />
@@ -75,22 +555,26 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/ayushchachan/Documents/percolation",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "last_opened_file_path": "/home/ac9991838/Documents/cs50/myproject/percolation",
     "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <created>1666611059448</created>
+      <created>1671779197101</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1666611059448</updated>
-      <workItem from="1666611060701" duration="174000" />
+      <updated>1671779197101</updated>
+      <workItem from="1671779199123" duration="427000" />
     </task>
     <servers />
   </component>
@@ -132,5 +616,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

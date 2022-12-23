@@ -1,5 +1,5 @@
 /**
- * @author Chankit Chachan
+ * @author Ayush Chachan
  */
 public class QuickUnionUF {
 

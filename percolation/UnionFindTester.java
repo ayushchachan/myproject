@@ -1,11 +1,10 @@
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.Scanner;
 
 
 /**
- * @author Chankit Chachan
+ * @author Ayush Chachan
  */
 public class UnionFindTester {
     public static void main(String[] args) {
@@ -26,9 +25,11 @@ public class UnionFindTester {
             }
             System.out.println("number of connected components = " + uf.count());
 
-        } catch (FileNotFoundException ex) {
+        }
+        catch (FileNotFoundException ex) {
             ex.printStackTrace();
-        } finally {
+        }
+        finally {
             if (sc != null) sc.close();
         }
 

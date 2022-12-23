@@ -1,15 +1,15 @@
 
 /*
- * Throw an IllegalArgumentException 
+ * Throw an IllegalArgumentException
  * in the constructor if either n ≤ 0 or trials ≤ 0.
  */
+
 import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.StdStats;
 import edu.princeton.cs.algs4.Stopwatch;
 
 /**
- *
- * @author Chankit Chachan
+ * @author Ayush Chachan
  */
 public class PercolationStats {
 
@@ -66,7 +66,8 @@ public class PercolationStats {
         PercolationStats st = new PercolationStats(n, trials);
         System.out.println("mean                    = " + st.mean());
         System.out.println("stddev                  = " + st.stddev());
-        System.out.println("95% confidence interval = [" + st.confidenceLo() + ", " + st.confidenceHi() + "]");
+        System.out.println(
+                "95% confidence interval = [" + st.confidenceLo() + ", " + st.confidenceHi() + "]");
         System.out.print("elapsed time     = " + t);
     }
 
