@@ -1,6 +1,6 @@
 import acm.graphics.*;
 import acm.program.*;
-
+import java.util.Random;
 import javax.swing.*;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -30,11 +30,18 @@ public class GBinaryTree<E> extends GraphicsProgram {
      */
     public GBinaryTree() {
         //initializeTree();
+
+
     }
 
     public static void main(String[] args) {
+        AVLTree<Integer> t = new AVLTree<>();
+        Random rgen = new Random();
 
-        new GBinaryTree().start(args);
+        for (int i = 0; i < 30; i++) {
+            t.treeInsert(rgen.nextInt(300));
+        }
+        new GBinaryTree(t).start(args);
 
     }
 
