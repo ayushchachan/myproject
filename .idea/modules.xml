@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/myproject.iml" filepath="$PROJECT_DIR$/myproject.iml" />
       <module fileurl="file://$PROJECT_DIR$/perceptron/perceptron.iml" filepath="$PROJECT_DIR$/perceptron/perceptron.iml" />
       <module fileurl="file://$PROJECT_DIR$/percolation/percolation.iml" filepath="$PROJECT_DIR$/percolation/percolation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seam carving/seam carving.iml" filepath="$PROJECT_DIR$/seam carving/seam carving.iml" />
     </modules>
   </component>
 </project>

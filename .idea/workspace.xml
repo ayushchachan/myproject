@@ -1,14 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="fe7c2c14-d419-46ec-8437-48ee2744f4b8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GBinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/10x10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/10x10.printseams.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/10x12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/10x12.printseams.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/12x10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/12x10.printseams.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/1x1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/1x8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/3x4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/3x4.printseams.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/3x7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/3x7.printseams.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/4x6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/4x6.printseams.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/5x6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/5x6.printseams.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/6x5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/6x5.printseams.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/7x10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/7x10.printseams.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/7x3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/7x3.printseams.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/8x1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/HJocean.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/HJoceanTransposed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/PrintEnergy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/PrintSeams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/ResizeDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/SCUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/SeamCarver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/ShowEnergy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/ShowSeams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/chameleon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/diagonals.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/diagonals.printseams.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/stripes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seam carving/src/stripes.printseams.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -32,24 +79,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/ac9991838/Documents/cs50/myproject/src&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "18",
+    "last_opened_file_path": "/home/ac9991838/Documents/cs50/myproject/algs4.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/seam carving/src" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/integerArithmetic/src" />
       <recent name="$PROJECT_DIR$/perceptron/src" />
@@ -70,6 +126,7 @@
       <workItem from="1671781133208" duration="2620000" />
       <workItem from="1672242166571" duration="129000" />
       <workItem from="1672402229261" duration="28000" />
+      <workItem from="1674023164756" duration="1476000" />
     </task>
     <servers />
   </component>
